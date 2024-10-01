@@ -27,13 +27,13 @@ end
 
 AddEventHandler('playerConnecting', function(name, reject, deferrals)
     deferrals.defer()
-    deferrals.update(string.format('国服联合封禁系统正在检查您是否被封禁...', name))
+    deferrals.update(string.format('联合封禁系统正在检查您是否被封禁...', name))
 
     local identifiers = GetPlayerIdentifiers(source)
     local isBanned, reason = checkBanList(identifiers)
 
     if isBanned then
-        reject('国服联合封禁：此账户因违反规定已被本服务器或其他服务器联合永久封禁！')
+        reject('联合封禁：此账户因违反规定已被本服务器或其他服务器联合永久封禁！')
         CancelEvent()
     else
         deferrals.done()
@@ -44,9 +44,9 @@ CreateThread(function()
     PerformHttpRequest(bannedListUrl, function(statusCode, response, headers)
         if statusCode == 200 then
             bannedList = json.decode(response)
-            print('FIVEM 国服联BAN系统：已加载到' .. tostring(#bannedList) .. '条封禁数据，并将会持续监听最新数据')
+            print('FIVEM 联BAN系统：已加载到' .. tostring(#bannedList) .. '条封禁数据，并将会持续监听最新数据')
         else
-            print('FIVEM 国服联BAN系统：获取联BAN数据失败！请确保您的服务器能正常访问GitHub' .. statusCode)
+            print('FIVEM 联BAN系统：获取联BAN数据失败！请确保您的服务器能正常访问GitHub' .. statusCode)
         end
     end, "GET", "", { ["Content-Type"] = "application/json" })
 
