@@ -46,7 +46,7 @@ CreateThread(function()
             bannedList = json.decode(response)
             print('FIVEM 国服联BAN系统：已加载到' .. tostring(#bannedList) .. '条封禁数据，并将会持续监听最新数据')
         else
-            print('FIVEM 国服联BAN系统：获取联BAN数据失败！请确保您的服务器能正常访问GitHub，或者更换数据源！' .. statusCode)
+            print('FIVEM 国服联BAN系统：获取联BAN数据失败！请确保您的服务器能正常访问GitHub' .. statusCode)
         end
     end, "GET", "", { ["Content-Type"] = "application/json" })
 
