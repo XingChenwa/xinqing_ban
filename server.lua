@@ -33,7 +33,7 @@ AddEventHandler('playerConnecting', function(name, reject, deferrals)
     local isBanned, reason = checkBanList(identifiers)
 
     if isBanned then
-        reject('联合封禁：此账户因违反规定已被本服务器或其他服务器联合永久封禁！')
+        reject('联ban封禁：此账户因违反规定已被本服务器或其他服务器联合永久封禁！')
         CancelEvent()
     else
         deferrals.done()
