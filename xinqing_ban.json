@@ -394,5 +394,10 @@
     {
         "license": "license:5fefa0a45162b196c1062deb1cfb026bd09413c9",
         "reason": "使用外挂"
+    },
+    {
+        "license": "license:040b463cd38b51870ca8806bc5db2edc4136fcb3",
+        "reason": "反作弊自动封禁"
     }
+    
 ]
