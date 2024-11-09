@@ -396,6 +396,10 @@
         "reason": "使用外挂"
     },
     {
+        "license": "license:de7df4a2802c2f143604e41735d71120e9888419",
+        "reason": "呆宝恶意bug使用"
+    },
+    {
         "license": "license:040b463cd38b51870ca8806bc5db2edc4136fcb3",
         "reason": "反作弊自动封禁"
     }
