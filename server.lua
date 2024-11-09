@@ -1,5 +1,6 @@
 local bannedList = {}
-local bannedListUrl = 'https://raw.githubusercontent.com/XingChenwa/xinqing_ban/refs/heads/main/xinqing_ban.json'
+--local bannedListUrl = 'https://raw.githubusercontent.com/XingChenwa/xinqing_ban/refs/heads/main/xinqing_ban.json' --国外 不在更新
+local bannedListUrl = 'https://raw.gitcode.com/qq_55622586/XinQing_Ban/raw/main/xinqing_ban.json' --国内
 
 function getIdentifierByType(identifiers, type)
     for _, v in pairs(identifiers) do
