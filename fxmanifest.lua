@@ -3,7 +3,7 @@ games { 'gta5' }
 
 author 'xinqing'
 description 'FiveM'
-version '1.0.0'
+version '1.1.0'
 repository 'https://github.com/XingChenwa/xinqing_ban/'
 
 server_scripts {
